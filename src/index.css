@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=JetBrains+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Playfair Display", Georgia, serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+  
+  --color-brand-blue: #0A1D37; /* Deep Navy Blue from Professional Polish theme */
+  --color-brand-blue-light: #132E54; /* Slightly lighter brand blue */
+  --color-brand-blue-dark: #051020; /* Very dark blue from theme */
+  --color-brand-gold: #C5A059; /* Precise Professional Polish Gold */
+  --color-brand-gold-dark: #A48041; /* Dark gold for text, contrast */
+  --color-brand-gold-light: #F8F9FA; /* Premium light backdrop color */
+  
+  --animate-fade-in-up: fade-in-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #F8F9FA;
+}
+
+/* Custom utility class for gold text gradient */
+.text-gold-gradient {
+  background: linear-gradient(135deg, #F8F9FA 0%, #C5A059 50%, #A48041 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gold-gradient-dark {
+  background: linear-gradient(135deg, #C5A059 0%, #A48041 50%, #7D612B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #0A1D37;
+}
+::-webkit-scrollbar-thumb {
+  background: #C5A059;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A48041;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Shiva Prime Estates",
+  "description": "Premium land and open plots investment portfolio landing page for Shiva Prime Estates.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
