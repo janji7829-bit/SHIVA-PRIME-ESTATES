@@ -18,7 +18,7 @@ export default function FloatingWhatsApp() {
     return () => clearTimeout(timer);
   }, []);
 
-  const whatsappUrl = "https://wa.me/919100083838?text=Hello%20Shiva%20Prime%20Estates,%20I%20am%20interested%20in%20inquiring%20about%20your%20premium%20open%20land%20plots.";
+  const whatsappUrl = "https://wa.me/91999999999?text=Hello%20Shiva%20Prime%20Estates,%20I%20am%20interested%20in%20inquiring%20about%20your%20premium%20open%20land%20plots.";
 
   return (
     <div className="fixed bottom-6 right-6 z-50 flex flex-col items-end">

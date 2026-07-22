@@ -7,7 +7,7 @@ import { Phone, Mail, MapPin, Calendar, Clock, MessageSquare } from 'lucide-reac
 import { LightSurveyBackground } from './LuxuryBackgroundEffects';
 
 export default function Contact() {
-  const whatsappUrl = "https://wa.me/919100083838?text=Hello%20Shiva%20Prime%20Estates,%20I%20am%20interested%20in%20booking%20a%20site%20visit%20for%20your%20premium%20plots!";
+  const whatsappUrl = "https://wa.me/91999999999?text=Hello%20Shiva%20Prime%20Estates,%20I%20am%20interested%20in%20booking%20a%20site%20visit%20for%20your%20premium%20plots!";
 
   return (
     <section id="contact" className="py-24 relative overflow-hidden">
@@ -50,7 +50,7 @@ export default function Contact() {
                     Call Hotline (Toll-Free)
                   </h4>
                   <p className="text-brand-blue font-display font-bold text-lg mt-1 hover:text-brand-gold-dark transition-colors">
-                    <a href="tel:+919100083838">+91 91000 83838</a>
+                    <a href="tel:+91999999999">+91 999999999</a>
                   </p>
                   <p className="text-gray-500 text-xs mt-0.5">Alternative support: +91 91000 84848</p>
                 </div>

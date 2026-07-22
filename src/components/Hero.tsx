@@ -7,6 +7,8 @@ import { motion } from 'motion/react';
 import { ArrowRight, ChevronDown, CheckCircle2, ShieldCheck, Award } from 'lucide-react';
 import LuxuryBackgroundEffects from './LuxuryBackgroundEffects';
 
+const heroBg = new URL('../assets/images/hero_land_bg_1784314530917.jpg', import.meta.url).href;
+
 export default function Hero() {
   const handleScrollTo = (id: string) => {
     const targetElement = document.querySelector(id);
@@ -20,7 +22,7 @@ export default function Hero() {
       {/* Background Image with Dark & Golden Overlays */}
       <div className="absolute inset-0 z-0">
         <img
-          src="/src/assets/images/hero_land_bg_1784314530917.jpg"
+          src={heroBg}
           alt="Premium Shiva Prime Estates Land Plots"
           className="w-full h-full object-cover scale-105 filter brightness-[0.4] saturate-[1.1]"
           referrerPolicy="no-referrer"

@@ -5,6 +5,14 @@
 
 import { Property, Testimonial, GalleryItem } from './types';
 
+// Asset URLs resolved dynamically via Vite import.meta.url so they work in both dev and production build
+const heroBgImg = new URL('./assets/images/hero_land_bg_1784314530917.jpg', import.meta.url).href;
+const gatedPlotImg = new URL('./assets/images/property_gated_plot_modern_villas_1784382886025.jpg', import.meta.url).href;
+const farmlandPlotImg = new URL('./assets/images/property_farmland_plots_1784380843329.jpg', import.meta.url).href;
+const residentialCourtImg = new URL('./assets/images/property_residential_court_1784381281558.jpg', import.meta.url).href;
+const commercialBmrdaImg = new URL('./assets/images/property_commercial_bmrda_1784382373032.jpg', import.meta.url).href;
+const investmentPerungalathurImg = new URL('./assets/images/property_investment_perungalathur_chennai_1784644676855.jpg', import.meta.url).href;
+
 export const TRUST_STATS = [
   { value: '15+', label: 'Years of Trust' },
   { value: '2,800+', label: 'Plots Handled & Sold' },
@@ -19,7 +27,7 @@ export const FEATURED_PROPERTIES: Property[] = [
     location: 'Mokila, Gachibowli Extension, Hyderabad',
     size: '240 - 500 Sq. Yds',
     price: '₹48 Lakhs onwards',
-    image: '/src/assets/images/property_gated_plot_modern_villas_1784382886025.jpg',
+    image: gatedPlotImg,
     type: 'Gated Plot',
     tags: ['HMDA Approved Layout', 'Gated Community', 'Ready to Build'],
     features: ['40 & 30 Feet Blacktop Roads', 'Underground Drainage', 'Overhead Water Tank', '24/7 Manned Security', 'Underground Electricity'],
@@ -32,7 +40,7 @@ export const FEATURED_PROPERTIES: Property[] = [
     location: 'Chevella, Agricultural Zone, Telangana',
     size: '0.25 - 1.0 Acre',
     price: '₹35 Lakhs onwards',
-    image: '/src/assets/images/property_farmland_plots_1784380843329.jpg',
+    image: farmlandPlotImg,
     type: 'Farmland',
     tags: ['Clear Title Deed', 'Sandalwood Plantation', 'High Appreciation'],
     features: ['Automated Drip Irrigation', 'Fenced Compound Wall', 'Mango & Sandalwood Trees', 'Caretaker Residence', 'Excellent Groundwater'],
@@ -45,7 +53,7 @@ export const FEATURED_PROPERTIES: Property[] = [
     location: 'Devanahalli, near Airport, North Bangalore',
     size: '1200 - 2400 Sq. Ft',
     price: '₹55 Lakhs onwards',
-    image: '/src/assets/images/property_residential_court_1784381281558.jpg',
+    image: residentialCourtImg,
     type: 'Residential Plot',
     tags: ['BIAAPA Approved', 'Scenic Foothill View', '90% Bank Loan Approved'],
     features: ['Modern Clubhouse', 'Jogging Track & Parks', 'Underground Sewage System', 'LED Streetlighting', 'Avenue Plantation'],
@@ -71,7 +79,7 @@ export const FEATURED_PROPERTIES: Property[] = [
     location: 'Kengeri Mysore Road, Bangalore',
     size: '1200 - 4000 Sq. Ft',
     price: '₹45 Lakhs onwards',
-    image: '/src/assets/images/property_commercial_bmrda_1784382373032.jpg',
+    image: commercialBmrdaImg,
     type: 'Commercial Plot',
     tags: ['BMRDA Approved Layout', 'Mysore Road NH-275 Facing', 'Immediate Registration'],
     features: ['Underground Drainage & Water', 'Avenue Plantation & Palm Trees', '100% LED Street Lighting', 'Ready to Construct Commercial Spaces', 'Clear Land Titles'],
@@ -84,7 +92,7 @@ export const FEATURED_PROPERTIES: Property[] = [
     location: 'Perungalathur, near Tambaram, South Chennai',
     size: '1000 - 2400 Sq. Ft',
     price: '₹32 Lakhs onwards',
-    image: '/src/assets/images/property_investment_perungalathur_chennai_1784644676855.jpg',
+    image: investmentPerungalathurImg,
     type: 'Investment Land',
     tags: ['CMDA Approved Layout', 'Near Perungalathur Station', 'High Appreciation Zone'],
     features: ['Excellent Ground Water', 'Gated Community Compound', 'Clear CMDA Title Deeds', '24/7 CCTV & Security', 'Blacktop Roads & Streetlights'],
@@ -126,37 +134,37 @@ export const TESTIMONIALS: Testimonial[] = [
 export const GALLERY_ITEMS: GalleryItem[] = [
   {
     id: 'gal-1',
-    url: '/src/assets/images/hero_land_bg_1784314530917.jpg',
+    url: heroBgImg,
     caption: 'Overview of rolling green layouts at Mokila Project Site',
     category: 'Site Progress'
   },
   {
     id: 'gal-2',
-    url: '/src/assets/images/property_gated_plot_modern_villas_1784382886025.jpg',
+    url: gatedPlotImg,
     caption: 'Finished blacktop roads and boundary markers installed',
     category: 'Site Progress'
   },
   {
     id: 'gal-3',
-    url: '/src/assets/images/property_farmland_plots_1784380843329.jpg',
+    url: farmlandPlotImg,
     caption: 'Organic farmland sandalwood trees thriving under caretaker supervision',
     category: 'Farmland'
   },
   {
     id: 'gal-4',
-    url: '/src/assets/images/property_investment_perungalathur_chennai_1784644676855.jpg',
+    url: investmentPerungalathurImg,
     caption: 'CMDA approved premium residential plots for sale at Perungalathur Chennai',
     category: 'Site Progress'
   },
   {
     id: 'gal-5',
-    url: '/src/assets/images/property_commercial_bmrda_1784382373032.jpg',
+    url: commercialBmrdaImg,
     caption: 'BMRDA approved commercial plots near Kengeri Mysore Road highway',
     category: 'Site Progress'
   },
   {
     id: 'gal-6',
-    url: '/src/assets/images/property_residential_court_1784381281558.jpg',
+    url: residentialCourtImg,
     caption: 'Birds-eye view of the magnificent central courtyard park',
     category: 'Site Progress'
   }
